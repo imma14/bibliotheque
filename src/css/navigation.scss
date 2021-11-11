@@ -1,0 +1,119 @@
+header {
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    background: white;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        font-weight: 700;
+        align-items: center;
+        a {
+        color: #333;
+        text-decoration: none;
+        text-transform: uppercase;
+            &:hover {
+                color: black;
+            }
+        }
+        .branding {
+            font-size: 22px;
+        }
+        .top-links {
+            display: flex;
+            align-items: center;
+            a {
+                display: block;
+                margin: 0 10px;
+            }
+            div.add {
+                display: block;
+                margin: 0 10px;
+                text-transform: uppercase;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+        .top-links-mobile {
+            display: none;
+        }
+        svg {
+            width: 25px;
+            display: none;
+            cursor: pointer;
+        }
+        .initials {
+            background: #333;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
+    .vue-popover {
+        color: white;
+        background: #333;
+        .option {
+            cursor: pointer;
+            margin: 10px 0;
+        }
+        a {
+            color: white;
+            text-transform: none;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+    .vue-popover.dropdown-position-bottom::before {
+        border-bottom:  6px solid #333;
+    }
+}
+@media(max-width:600px){
+    header {
+        nav {
+            svg {
+                display: block;
+            }
+            .top-links {
+                display: none;
+            }
+        }
+        .top-links-mobile {
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            height: 100vh;
+            position: fixed;
+            height: 100%;
+            width: 80%;
+            max-width: 350px;
+            background: #333;
+            color: white;
+            left: 0;
+            top: 0;
+            padding: 20px;
+            z-index: 999;
+            a {
+                color: white;
+                margin: 8px 0;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+.slide-leave-active,
+.slide-enter-active {
+transition: 0.5s;
+}
+.slide-enter {
+transform: translate(-100%, 0);
+}
+.slide-leave-to {
+transform: translate(-100%, 0);
+}

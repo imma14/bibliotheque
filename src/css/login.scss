@@ -1,0 +1,70 @@
+.credentials {
+    width: 100%;
+    max-width: 500px;
+    margin: 60px auto;
+    background: white;
+    padding: 30px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    box-shadow : 0 0 40px #a0a0a0;
+    .error {
+        text-align: center;
+        color: rgb(209, 14, 14);
+        font-weight: bold;
+        padding: 6px 25px;
+        border: 1px solid rgb(209, 14, 14);
+        margin: 20px 0;
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    h2 {
+        text-align: center;
+        margin: 20px 0;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        label {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+        input {
+            padding: 6px;
+            border-radius: 5px;
+            border: 1px solid #b5b4b4;
+            margin-bottom: 15px;
+        }
+        button {
+            width: 200px;
+            margin: 16px auto;
+            font-size: 18px;
+            padding: 5px;
+            border-radius: 100px;
+            border: none;
+            color: white;
+            background: #333;
+            cursor: pointer;
+            &:hover {
+                background: rgb(82, 81, 81);
+            }
+        }
+    }
+    a {
+        color: black;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        display: block;
+    }
+    .to-register {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+}
